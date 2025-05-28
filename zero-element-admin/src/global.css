@@ -1,0 +1,73 @@
+html,
+body,
+#root {
+  /* height: 100%; */
+  background-color: #F0F2F5;
+  /* overflow: hidden; */
+}
+* ::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+* ::-webkit-scrollbar-button{
+  width: 0px;
+  height: 0px;
+}
+* ::-webkit-scrollbar-thumb{
+  background-color: #aaa;
+}
+body {
+  margin: 0;
+}
+
+.ant-layout {
+  height: 100%;
+}
+
+header.ant-layout-header {
+  padding: 0 30px;
+}
+
+#root .ant-back-top {
+  right: 20px;
+}
+
+.ant-form .ant-form-item-control-input-content>input,
+.ant-form .ant-select {
+  /* max-width: 240px; */
+  border-radius:5px;
+}
+.ant-select {
+  min-width: 6em;
+
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  border-radius:5px;
+}
+
+.ant-typography {
+  word-break: break-all;
+}
+
+.ZEleA-margin-left {
+  margin-left: 12px;
+}
+
+.ZEleA-Breadcrumb-margin.ant-breadcrumb {
+  margin: 12px 0;
+}
+.LeftCoverBreadcrumb{
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+.LeftCoverBreadcrumb a{
+  color: white!important;
+}
+.LeftCoverBreadcrumb a:hover{
+  color: #FFF9!important;
+}
+.LeftCoverBreadcrumb > span:last-child a,
+.LeftCoverBreadcrumb > span:last-child span{
+  color:#FFF8!important;
+}

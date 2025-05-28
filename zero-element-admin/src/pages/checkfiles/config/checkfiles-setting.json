@@ -1,0 +1,145 @@
+{
+	"updateAPI": "/api/adm/data/services/Product/[id]",
+	"tableFields": [{
+		"field": "username",
+		"label": "用户名"
+	}, {
+		"field": "price",
+		"label": "价格"
+	}, {
+		"field": "stock",
+		"label": "库存"
+	}, {
+		"field": "description",
+		"label": "描述"
+	}],
+	"listAPI": "/api/adm/data/services/Product",
+	"columns": 1,
+	"updateFields": [{
+		"field": "name",
+		"rules": [{
+			"type": "required"
+		}],
+		"label": "商品名称",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入商品名称"
+		}
+	}, {
+		"field": "price",
+		"rules": [{
+			"type": "required"
+		}],
+		"label": "价格",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入价格"
+		}
+	}, {
+		"field": "stock",
+		"label": "库存",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入库存数量"
+		}
+	}, {
+		"field": "description",
+		"label": "描述",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入商品描述"
+		}
+	}],
+	"viewConfig": [{
+			"field": "name",
+			"label": "商品名称",
+			"type": "plain"
+		}, {
+			"field": "price",
+			"label": "价格",
+			"type": "plain"
+		}, {
+			"field": "stock",
+			"label": "库存",
+			"type": "plain"
+		}, {
+			"field": "description",
+			"label": "描述",
+			"type": "plain"
+		}],
+	"getAPI": "/api/adm/data/services/Product/[id]",
+	"pageName": {
+		"new": "新增字段模板",
+		"edit": "更改字段模板",
+		"name": "",
+		"table": "字段模板"
+	},
+	"createFields": [{
+		"field": "name",
+		"rules": [{
+			"type": "required"
+		}],
+		"label": "商品名称",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入商品名称"
+		}
+	}, {
+		"field": "price",
+		"rules": [{
+			"type": "required"
+		}],
+		"label": "价格",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入价格"
+		}
+	}, {
+		"field": "stock",
+		"label": "库存",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入库存数量"
+		}
+	}, {
+		"field": "description",
+		"label": "描述",
+		"type": "input",
+		"props": {
+			"placeholder": "请输入商品描述"
+		}
+	}],
+	"layout": {
+		"form": "TitleContent",
+		"table": "Content"
+	},
+	"deleteAPI": "/api/adm/data/services/Product/(id)",
+	"tableOperation": [{
+		"options": {
+			"path": "checkfiles/checkfiles-view",
+			"outside": true
+		},
+		"title": "详情",
+		"type": "path"
+	}, {
+		"options": {
+			"path": "checkfiles/checkfiles-edit",
+			"outside": true
+		},
+		"title": "编辑",
+		"type": "path"
+	}, {
+		"title": "删除",
+		"type": "delete"
+	}],
+	"createAPI": "/api/adm/data/services/Product",
+	"map": {},
+	"tableActions": [{
+		"options": {
+			"path": "checkfiles/checkfiles-add",
+			"style": "primary"
+		},
+		"title": "添加",
+		"type": "path"
+	}]
+}

@@ -1,0 +1,268 @@
+@import './theme.less';
+
+// #1890ff
+
+a {
+  color: @ZEle-primary-color;
+
+  &:focus,
+  &:hover {
+    color: @ZEle-primary-color-light;
+  }
+}
+
+.ant-btn-primary {
+  background-color: @ZEle-primary-color;
+  border-color    : @ZEle-primary-color;
+  
+  &:focus,
+  &:hover {
+    background-color: @ZEle-primary-color-light;
+    border-color    : @ZEle-primary-color-light;
+  }
+}
+
+.ant-layout-header.header {
+  background: @ZEle-menu-top-bgColor;
+}
+
+/* tab */
+.ant-tabs-ink-bar {
+  background-color: @ZEle-primary-color;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: @ZEle-primary-color;
+}
+
+.ant-tabs-tab:focus,
+.ant-tabs-tab:active,
+.ant-tabs-tab:hover,
+.ant-tabs-tab .ant-tabs-tab-btn:focus {
+  color: @ZEle-primary-color-light !important;
+}
+
+.ant-tabs-top>.ant-tabs-nav::before {
+  border-bottom: unset;
+}
+
+.ZEle-action-button.primary {
+  color           : @ZEle-action-primary-fontColor;
+  background-color: @ZEle-action-primary;
+  border-color    : @ZEle-action-primary-fontColor;
+
+  margin          : @ZEle-action-margin;
+  min-width       : @ZEle-action-minWidth ;
+  min-height      : @ZEle-action-minHeight ;
+  border-radius   : @ZEle-action-borderRadius;
+  font-size       : @ZEle-action-fontSize;
+
+  &:focus,
+  &:hover {
+    color           : @ZEle-action-primary-light-fontColor;
+    background-color: @ZEle-action-primary-light;
+    border-color    : @ZEle-action-primary-light-fontColor;
+  }
+}
+
+.ZEle-action-button.secondary {
+  color           : @ZEle-action-secondary-fontColor;
+  background-color: @ZEle-action-secondary;
+  border-color    : @ZEle-action-secondary-fontColor;
+
+  margin          : @ZEle-action-margin;
+  min-width       : @ZEle-action-minWidth ;
+  min-height      : @ZEle-action-minHeight ;
+  border-radius   : @ZEle-action-borderRadius;
+  font-size       : @ZEle-action-fontSize;
+
+  &:focus,
+  &:hover {
+    color           : @ZEle-action-secondary-light-fontColor;
+    background-color: @ZEle-action-secondary-light;
+    border-color    : @ZEle-action-secondary-light-fontColor;
+  }
+}
+
+.ZEle-action-button.default {
+  color           : @ZEle-action-default-fontColor;
+  background-color: @ZEle-action-default;
+  border-color    : @ZEle-action-default-fontColor;
+
+  margin          : @ZEle-action-margin;
+  min-width       : @ZEle-action-minWidth ;
+  min-height      : @ZEle-action-minHeight ;
+  border-radius   : @ZEle-action-borderRadius;
+  font-size       : @ZEle-action-fontSize;
+  &:focus,
+  &:hover {
+    color           : @ZEle-action-default-light-fontColor;
+    background-color: @ZEle-action-default-light;
+    border-color    : @ZEle-action-default-light-fontColor;
+  }
+}
+
+.ant-layout-content div.ZEleA-Layout-Content>h2{
+  border-bottom : 1px solid #666;
+  padding-bottom: 5px;
+  margin-bottom : 5px;
+}
+
+@media screen and (min-width: 60em) {
+  .fr-wrapper .w5-l { width: 16.9rem!important; }
+}
+
+.left-item{
+  height: auto!important;
+  min-height: 2.2rem;
+  padding:5px 8px;
+}
+p.f6.b{
+  background-color: #1B7FBC;
+  color: #fff;
+  padding:5px 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+}
+// Tag
+.ant-tag{
+  // border-radius: @TAG-ALL-BorderRadius!important;
+  padding:@TAG-ALL-Padding!important;
+}
+// status
+._tag_color_status_open{
+  color: @TAGSt-OPEN-FontColor!important;
+  background-color: @TAGSt-OPEN-BackGroundColor!important;
+}
+
+._tag_color_status_close{
+  color: @TAGSt-CLOSE-FontColor!important;
+  background-color: @TAGSt-CLOSE-BackGroundColor!important;
+}
+
+._tag_color_status_processing{
+  color: @TAGSt-PRO-FontColor!important;
+  background-color: @TAGSt-PRO-BackGroundColor!important;
+}
+
+._tag_color_status_default{
+  color: @TAGSt-DEF-FontColor!important;
+  background-color: @TAGSt-DEF-BackGroudColor!important;
+}
+// option
+._tag_color_option_blue{
+  color: @TAGOp-BLUE-FontColor!important;
+  background-color: @TAGOp-BLUE-BackGroundColor!important;
+}
+
+._tag_color_option_cyan{
+  color: @TAGOp-CYAN-FontColor!important;
+  background-color: @TAGOp-CYAN-FontColor!important;
+}
+
+._tag_color_option_purple{
+  color: @TAGOp-PURPLE-FontColor!important;
+  background-color: @TAGOp-PURPLE-BackGroundColor!important;
+}
+
+._tag_color_option_purple_dark{
+  color: @TAGOp-PURPLE-Dark-FontColor!important;
+  background-color: @TAGOp-PURPLE-Dark-BackGroundColor!important;
+}
+
+._tag_color_option_orange{
+  color: @TAGOp-ORANGE-FontColor!important;
+  background-color: @TAGOp-ORANGE-BackGroundColor!important;
+}
+
+._tag_color_option_gray{
+  color: @TAGOp-GRAY-FontColor!important;
+  background-color: @TAGOp-GRAY-BackGroundColor!important;
+}
+// priority
+._tag_color_priority_p1{
+  color: @TAGPri-P1-FontColor!important;
+  background-color: @TAGPri-P1-BackGroundColor!important;
+}
+
+._tag_color_priority_p2{
+  color: @TAGPri-P2-FontColor!important;
+  background-color: @TAGPri-P2-BackGroundColor!important;
+}
+
+._tag_color_priority_p3{
+  color: @TAGPri-P3-FontColor!important;
+  background-color: @TAGPri-P3-BackGroundColor!important;
+}
+._tag_color_priority_p4{
+  color: @TAGPri-P4-FontColor!important;
+  background-color: @TAGPri-P4-BackGroundColor!important;
+}
+._tag_color_priority_p5{
+  color: @TAGPri-P5-FontColor!important;
+  background-color: @TAGPri-P5-BackGroundColor!important;
+}
+// security
+._tag_color_security_warning{
+  color: @TAGSec-WARNING-FontColor!important;
+  background-color: @TAGSec-WARNING-BackGroundColor!important;
+}
+
+._tag_color_security_danger{
+  color: @TAGSec-DANGER-FontColor!important;
+  background-color: @TAGSec-DANGER-BackGroundColor!important;
+}
+
+._tag_color_security_error{
+  color: @TAGSec-ERROR-FontColor!important;
+  background-color: @TAGSec-ERROR-BackGroundColor!important;
+}
+
+._tag_color_security_safe{
+  color: @TAGSec-SAFE-FontColor!important;
+  background-color: @TAGSec-SAFE-BackGroundColor!important;
+}
+
+.User_Card{
+  display: flex;
+}
+
+.User_Card{
+  box-shadow: 0 2px 8px #0003;
+  background-color: #fff;
+  .User_Header_Card{
+    background-color: #fff;
+    flex: 1;
+    // margin-right: 20px;
+    // margin-left: 20px;
+    // box-shadow: 0 2px 8px #0003;
+    padding: 4vw 8vw;
+    // min-height: 100%;
+    // width: auto;
+    clear: both;
+    // margin-bottom: 16px;
+    box-sizing: border-box;
+    // max-width: 240px;
+    position: relative;
+    height: auto;
+    left: 80px;
+    min-height: 260px;
+    // padding-left: 2000px;
+    .User_Text{
+      font-size: 30px;
+      font-weight: bolder;
+      // margin-top: 50px;
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .User_Update_Card{
+      position: absolute;
+      bottom: 0px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    #    url: jdbc:mysql://sh-cynosdbmysql-grp-mlyunquo.sql.tencentcdb.com:25133/smallsaas?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://localhost:3306/company?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    #    password: zb2014@8888
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    filters: log4j,wall,mergeStat
+    sql-script-encoding: UTF-8
+    schema: classpath*:sql/**/*-schema.sql
+    data: classpath*:sql/**/*-data.sql
+    initialize: false
+###################  mybatis-plus配置  ###################
+mybatis-plus:
+  mapper-locations: classpath*:com/jfeat/**/mapping/*.xml
+  type-aliases-package: com.jfeat.**.model
+  global-config:
+    id-type: 2  #0:数据库ID自增   1:用户输入id   2:全局唯一id(IdWorker)   3:全局唯一ID(uuid)  4: 该类型为未设置主键类型(none)
+    db-column-underline: true
+    refresh-mapper: true
+    logic-delete-value: -1
+    logic-not-delete-value: 1
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true #配置的缓存的全局开关
+    lazyLoadingEnabled: true #延时加载的开关
+    multipleResultSetsEnabled: true #开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+logging:
+  level:
+    root: info
+    file: logs/access.log

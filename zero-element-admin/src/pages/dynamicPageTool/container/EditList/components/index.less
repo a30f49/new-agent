@@ -1,0 +1,198 @@
+
+.rotateRight(@startDeg,@endDeg,@name){
+  @keyframes @name{
+    from {
+      transform: rotate(@startDeg);
+      transform-origin: center center;
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+  @-webkit-keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+  @-moz-keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+  @-o-keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+}
+
+.rotateLeft(@startDeg,@endDeg,@name){
+  @keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+  @-webkit-keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+  @-moz-keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+  @-o-keyframes @name{
+    from {
+      transform-origin: center center;
+      transform: rotate(@startDeg);
+    }
+    to {
+      transform-origin: center center;
+      transform: rotate(@endDeg);
+    }
+  }
+}
+
+.listShow(@startWidth,@endWidth,@name){
+  @keyframes @name{
+    from {
+      transform-origin: center center;
+      width: @startWidth;
+    }
+    to {
+      transform-origin: center center;
+      width: @endWidth;
+    }
+  }
+  @-webkit-keyframes @name{
+    from {
+      transform-origin: center center;
+      width:@startWidth;
+    }
+    to {
+      transform-origin: center center;
+      width: @endWidth;
+    }
+  }
+  @-moz-keyframes @name{
+    from {
+      transform-origin: center center;
+      width: @startWidth;
+    }
+    to {
+      transform-origin: center center;
+      width: @endWidth;
+    }
+  }
+  @-o-keyframes @name{
+    from {
+      transform-origin: center center;
+      width: @startWidth;
+    }
+    to {
+      transform-origin: center center;
+      width: @endWidth;
+    }
+  }
+}
+
+.rotateRight(180deg,0deg,ArrowTop);
+.rotateLeft(180deg,0deg,ArrowBottom);
+.animation(@animation-name,@animation-duration,@animation-timing-function,@animation-delay,@play-state){
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  -ms-animation: @arguments;
+  -o-animation:  @arguments;
+  animation: @arguments;
+}
+
+.Arrow_top{
+  .animation(ArrowTop,.2s,Linear,0s,forwards)
+}
+
+.Arrow_bottom{
+  .animation(ArrowBottom,.2s,Linear,0s,forwards)
+}
+
+.ColorSelect_content,.FontSelect_content{
+    user-select: none;
+    display: flex;
+    margin: 15px 5px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.ColorSelect_block{
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888;
+    overflow: hidden;
+    display: block;
+    margin:  0 20px;
+    align-items: center;
+    justify-content: center;
+}
+.ColorSelect_text{
+
+}
+.FontSelect_text{
+    margin:  0 20px;
+}
+.FontSelect_value{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.FontSelect_labelText{
+    display: flex;
+    align-items: center;
+}
+.ColorSelect_selectbox,.FontSelect_selectbox{
+    display: block;
+    position: absolute;
+    top:50%;
+    right: 5px;
+    transform: translate(0,-50%);
+    &.selected::after{
+        content: url("./public//√.png");
+        // float: right;
+
+        // color:"#0DBC79"
+    }
+}
+.FontSelect_selectbox{
+    
+}
+

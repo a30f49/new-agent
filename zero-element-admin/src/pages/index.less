@@ -1,0 +1,275 @@
+.p-index {
+  height    : 100%;
+  background: #fff;
+
+  .header {
+    height         : 70px;
+    padding        : 0 120px;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    .logo {
+      width            : 160px;
+      height           : 50px;
+      background-image : url('../assets/logo_black.svg');
+      background-repeat: no-repeat;
+    }
+
+    .button {
+      width: 210px;
+
+      &>button {
+        border       : 1px solid #ff6C01;
+        border-radius: 4px;
+        background   : transparent;
+        color        : #fff;
+        font-size    : 16px;
+        transition   : all .3s;
+        cursor       : pointer;
+        outline      : unset;
+        width        : 90px;
+        padding      : 4px 0;
+        font-size    : 14px;
+      }
+
+      &>button:nth-child(1) {
+        color       : #ff6C01;
+        margin-right: 16px;
+      }
+
+      &>button:nth-child(1):hover {
+        color: rgb(255, 132, 44);
+      }
+
+      &>button:nth-child(1):active {
+        color: rgb(194, 87, 11);
+      }
+
+      &>button:nth-child(2) {
+        background-color: #ff6C01;
+        border-color    : #ff6C01;
+      }
+
+      &>button:nth-child(2):hover {
+        background-color: rgb(255, 132, 44);
+        border-color    : rgb(255, 132, 44);
+      }
+
+      &>button:nth-child(2):active {
+        background-color: rgb(194, 87, 11);
+        border-color    : rgb(194, 87, 11);
+      }
+    }
+  }
+
+
+  .scaleContainer {
+    height    : 50px;
+    border-top: 1px solid rgba(255, 108, 1, 1);
+    position  : relative;
+    overflow  : hidden;
+
+    .scale-left {
+      position    : absolute;
+      left        : 0;
+      width       : 0;
+      height      : 0;
+      border-style: solid;
+      border-width: 40px 1000px 0 0;
+      border-color: rgba(255, 108, 1, 0.15) transparent transparent transparent;
+    }
+
+    .scale-right {
+      position    : absolute;
+      right       : 0;
+      width       : 0;
+      height      : 0;
+      border-style: solid;
+      border-width: 0 1000px 40px 0;
+      border-color: transparent rgba(255, 108, 1, 1) transparent transparent;
+    }
+  }
+
+  .content {
+    background    : url('../assets/index_bg.png');
+    padding-bottom: 40px;
+
+    &>.title {
+      margin        : 42px 0 26px 0;
+      font-family   : MicrosoftYaHei, Î¢ÈíÑÅºÚ;
+      font-size     : 28px;
+      color         : #000000;
+      letter-spacing: 0.88px;
+      text-align    : center;
+    }
+
+    .iconContainer {
+      height         : 94px;
+      display        : flex;
+      justify-content: center;
+
+      .iconBox {
+        width     : 140px;
+        text-align: center;
+        margin    : 0 40px;
+
+        .icon {
+          width            : 48px;
+          height           : 48px;
+          margin           : 0 auto;
+          background-size  : 48px;
+          background-repeat: no-repeat;
+        }
+
+        .icon-1 {
+          background-image: url('../assets/icon-index1.svg');
+        }
+
+        .icon-2 {
+          background-image: url('../assets/icon-index2.svg');
+        }
+
+        .icon-3 {
+          background-image: url('../assets/icon-index3.svg');
+        }
+
+        .bar {
+          width           : 17px;
+          height          : 4px;
+          margin          : 8px auto;
+          background-color: #ff6C01;
+        }
+      }
+    }
+
+    .bar {
+      margin-bottom: 80px;
+    }
+
+    .bannerContainer {
+      display        : flex;
+      align-items    : flex-end;
+      justify-content: center;
+
+      .banner {
+        width   : 640px;
+        height  : 350px;
+        position: relative;
+
+        .banner_1 {
+          width           : 340px;
+          height          : 255px;
+          background-image: url('../assets/index-banner-1.png');
+        }
+
+        .banner_2 {
+          position        : absolute;
+          left            : 236px;
+          top             : 47px;
+          width           : 400px;
+          height          : 300px;
+          background-image: url('../assets/index-banner-2.png');
+        }
+
+        .banner_3 {
+          position        : absolute;
+          left            : 0;
+          bottom          : 0;
+          width           : 85px;
+          height          : 85px;
+          background-size : 85px;
+          background-image: url('../assets/qrcode.svg');
+        }
+
+      }
+
+      .bannerText {
+        margin-left: 120px;
+        height     : 275px;
+
+        .title {
+          font-family   : MicrosoftYaHei, Î¢ÈíÑÅºÚ;
+          font-size     : 28px;
+          color         : #000000;
+          letter-spacing: 2.33px;
+        }
+
+        .countInfo {
+          height       : 48px;
+          display      : flex;
+          align-items  : center;
+          margin-bottom: 40px;
+
+          .info_1 {
+            font-family   : MicrosoftYaHei, Î¢ÈíÑÅºÚ;
+            font-size     : 14px;
+            color         : #FF6C01;
+            letter-spacing: 1.17px;
+          }
+
+          .info_2 {
+            font-family   : MicrosoftYaHei, Î¢ÈíÑÅºÚ;
+            font-size     : 14px;
+            letter-spacing: 1.17px;
+          }
+
+          .countBox {
+            font-family: DINAlternate-Bold;
+            font-size  : 32px;
+            color      : #FF6C01;
+            padding    : 0 16px;
+
+            span {
+              border-bottom: 4px solid #ff6C01;
+            }
+          }
+        }
+
+        .text {
+          opacity       : 0.5;
+          font-family   : MicrosoftYaHei, Î¢ÈíÑÅºÚ;
+          font-size     : 14px;
+          color         : #000000;
+          letter-spacing: 1px;
+        }
+
+        .text_2 {
+          font-family   : MicrosoftYaHei, Î¢ÈíÑÅºÚ;
+          font-size     : 18px;
+          color         : #FF6C01;
+          letter-spacing: 1.5px;
+          margin        : 16px 0;
+        }
+
+        .button {
+          background   : #FF6C01;
+          border       : 1px solid #ff6C01;
+          border-radius: 4px;
+          color        : #fff;
+          font-size    : 16px;
+          transition   : all .3s;
+          cursor       : pointer;
+          outline      : unset;
+          width        : 100px;
+          padding      : 4px 0;
+          font-size    : 14px;
+        }
+
+        .button:hover {
+          background: rgb(255, 132, 44);
+        }
+      }
+    }
+  }
+
+  footer {
+    text-align      : center;
+    padding         : 6px;
+    position        : absolute;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    background-color: rgba(255, 108, 1, .1);
+  }
+}

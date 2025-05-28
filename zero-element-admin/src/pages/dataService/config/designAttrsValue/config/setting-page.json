@@ -1,0 +1,127 @@
+{
+  "pageName": {
+    "table": "字段值"
+  },
+  "columns": 2,
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "map": {},
+  "tableActions": [
+    {
+      "title": "添加",
+      "type": "modal",
+      "options": {
+        "style": "primary",
+        "modalTitle": "添加",
+        "modalWidth": 600,
+        "items": [
+          {
+            "component": "data_service_add",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "getFormApi": "/api/cfg/data/services/attrs/(entityName)/all",
+                "createAPI": "/api/data/services/(entityName)"
+              },
+              "fields": [
+              ]
+            }
+          }
+        ]
+      },
+      "expect": {
+      }
+    }
+  ],
+  "tableOperation": [
+    
+    {
+      "title": "编辑",
+      "type": "modal",
+      "options": {
+        "modalTitle": "编辑",
+        "modalWidth": 600,
+        "outside": true,
+        "items": [
+          {
+            "component": "data_service_add",
+            "config": {
+              "layout": "Grid",
+              "layoutConfig": {
+                "value": [
+                  24
+                ]
+              },
+              "API": {
+                "getFormApi": "/api/cfg/data/services/attrs/(entityName)/all",
+                "getAPI": "/api/data/services/[entityName]/(rowId)",
+                "updateAPI": "/api/data/services/[entityName]/(rowId)"
+              },
+              "fields": [
+              ]
+            }
+          }
+        ]
+      },
+      "expect": {
+        "permission": ""
+      }
+    },
+    {
+      "title": "删除",
+      "type": "request",
+      "options": {
+        "outside": true,
+        "tips": "确定要删除吗?",
+        "API": "/api/data/services/[entityName]/(rowId)",
+        "method": "delete"
+      }
+    }
+  ],
+  "createFields": [
+    {}
+  ],
+  "updateFields": [
+    {}
+  ],
+  "viewFields": [
+    {}
+  ],
+  "listAPI": "/api/data/services/[entityName]",
+  "createAPI": "/api/[id]",
+  "getAPI": "/api/(id)",
+  "updateAPI": "/api/(id)",
+  "deleteAPI": "/api/(id)",
+  "searchFields": [
+    {
+      "field": "search",
+      "label": "搜索",
+      "type": "input",
+      "props": {
+        "placeholder": "请输入..."
+      }
+    }
+  ],
+  "tableFields": [
+    
+  ],
+  "viewConfig": [
+    {
+      "title": "详情",
+      "type": "plain",
+      "fields": [
+        {
+          "label": "名字",
+          "field": "name"
+        }
+      ]
+    }
+  ]
+}

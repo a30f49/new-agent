@@ -1,0 +1,52 @@
+{
+	"columns": 1,
+	"listAPI": "http://192.168.3.224:5000/v2/_catalog",
+	"createAPI": "http://192.168.3.224:5000/v2/_catalog",
+	"getAPI": "http://192.168.3.224:5000/v2/_catalog/[id]",
+	"updateAPI": "http://192.168.3.224:5000/v2/_catalog/[id]",
+	"deleteAPI": "http://192.168.3.224:5000/v2/_catalog/(id)",
+	"searchType": "MoreSearch",
+	"searchButtonType": "text",
+	"pageName": {
+		"table": "registry",
+		"new": "新增",
+		"edit": "编辑",
+		"name": "registry",
+		"view": "registry"
+	},
+	"createFields": [{
+		"field": "image",
+		"label": "镜像名",
+		"type": "input"
+	}],
+	"updateFields": [{
+		"field": "image",
+		"label": "镜像名",
+		"type": "input"
+	}],
+	"layout": {
+		"table": "Content",
+		"form": "TitleContent"
+	},
+	"tableActions": [],
+	"tableOperation": [{
+	
+		"title":"详情",
+		"type":"path",
+		"options":{
+			"outside":true,
+			"path":"tagslist"
+		}
+	}],
+	"searchFields": [],
+	"tableFields": [{
+		"field": "image",
+		"label": "镜像名",
+		"align": "left"
+	}],
+	"viewConfig": [{
+		"field": "image",
+		"label": "镜像名",
+		"type": "plain"
+	}]
+}

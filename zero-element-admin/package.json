@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node init.js && umi dev",
+    "build": "node init.js && NODE_OPTIONS=--openssl-legacy-provider umi build",
+    "buildA": "set ANALYZE=1 && NODE_OPTIONS=--openssl-legacy-provider umi build",
+    "test": "umi test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@umijs/preset-react": "^1.5.12",
+    "braft-editor": "2.3.9",
+    "copy-text-to-clipboard": "^3.2.0",
+    "lodash": "^4.17.21",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-simple-verify": "^1.0.8",
+    "umi": "3.2.17",
+    "zero-element": "^1.0.0",
+    "zero-element-antd": "git+https://gitee.com/smallsaas/zero-element-antd.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "less": "^4.1.1",
+    "react-test-renderer": "^16.9.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

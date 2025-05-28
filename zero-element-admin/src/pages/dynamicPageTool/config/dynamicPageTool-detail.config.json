@@ -1,0 +1,68 @@
+{
+  "pageName": {
+    "table": "配置列表",
+    "new": "添加",
+    "edit": "编辑",
+    "view": "配置详情"
+  },
+  "listAPI": "/api/crud/appPermission/appPermissions",
+  "createAPI": "/api/crud/appPermission/appPermissions",
+  "getAPI": "/api/crud/appPermission/appPermissions/[id]",
+  "updateAPI": "/api/crud/appPermission/appPermissions/[id]",
+  "deleteAPI": "/api/crud/appPermission/appPermissions/(id)",
+  "columns": 2,
+  "createFields": [
+    
+  ],
+  "updateFields": [
+    
+  ],
+  "map": {
+  },
+  "layout": {
+    "table": "Content",
+    "form": "TitleContent"
+  },
+  "tableActions": [
+  ],
+  "tableOperation": [
+  ],
+  "searchFields": [
+  ],
+  "tableFields": [
+  ],
+  "viewConfig": {
+    "left": [
+      {
+        "title": "配置详情",
+        "type": "plain",
+        "fields": [
+          {
+            "label": "微服务名",
+            "field": "service_name"
+          },
+          {
+            "label": "appid",
+            "field": "项目id"
+          },
+          {
+            "label": "权限",
+            "field": "permission"
+          },
+          {
+            "label": "接口id",
+            "field": "apiid"
+          },
+          {
+            "label": "请求路径",
+            "field": "api_url"
+          },
+          {
+            "label": "请求方式",
+            "field": "api_method"
+          }
+        ]
+      }
+    ]
+  }
+}
