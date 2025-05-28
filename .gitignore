@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/npm-debug.log*
+/package-lock.json
+/yarn-error.log
+/yarn.lock
+
+# production
+/dist
+/zero-antd-dep
+/libs/schema-generator/node_modules
+dist.rar
+
+# form-type-starter
+/form-type-starter/dist
+/form-type-starter/node_modules
+/form-type-starter/zero-antd-dep
+/form-type-starter/src/.umi
+/form-type-starter/src/.umi-production
+/form-type-starter/package-lock.json
+
+# misc
+.DS_Store
+
+# umi
+.umi
+.umi-production
+
+## vscode
+.vscode/
